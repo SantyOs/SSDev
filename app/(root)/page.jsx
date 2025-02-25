@@ -56,7 +56,7 @@ const MyPage = () => {
 											/>
 										</div>
 									</div>
-									<motion.h3
+									{/* <motion.h3
 										className="uppercase text-xl mb-3 font-normal text tracking-[.5rem] text-gray-500"
 										initial={{ x: -100, opacity: 0 }}
 										whileInView={{ x: 0, opacity: 1 }}
@@ -65,7 +65,7 @@ const MyPage = () => {
 											type: "spring",
 										}}>
 										Alvalen Shafel
-									</motion.h3>
+									</motion.h3> */}
 									<motion.h1
 										className="text-black text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl font-bold my-2 md:my-5"
 										initial={{ x: -100, opacity: 0 }}
@@ -74,7 +74,7 @@ const MyPage = () => {
 											delay: 0.3,
 											type: "spring",
 										}}>
-										Full Stack Developer
+										SSDev
 									</motion.h1>
 									<motion.p
 										className="title text-md  2xl:text-xl mt-4 tracking-wider text-gray-500 leading-[1.7rem]"
@@ -101,12 +101,12 @@ const MyPage = () => {
 										}}>
 										<Button variation="primary">
 											<Link
-												href={"/docs/cv.pdf"}
+												href={"/Nosotros"}
 												target="_blank"
 												rel="noopener noreferrer"
 												locale={false}
 												download>
-												Download CV
+												Nosotros
 											</Link>
 										</Button>
 										<Button variation="secondary">
