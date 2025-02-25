@@ -6,10 +6,10 @@ import Button from "@/components/Button";
 import Image from "next/image";
 
 // images
-import ReactChat1 from "@/public/image/projects/web/trivia/trivia1.png";
-import ReactChat2 from "@/public/image/projects/web/trivia/trivia2.png";
-import ReactChat3 from "@/public/image/projects/web/trivia/trivia3.png";
-import ProjectAll from "@/public/image/projects.png";
+// import ReactChat1 from "@/public/image/projects/web/trivia/trivia1.png";
+// import ReactChat2 from "@/public/image/projects/web/trivia/trivia2.png";
+// import ReactChat3 from "@/public/image/projects/web/trivia/trivia3.png";
+// import ProjectAll from "@/public/image/projects.png";
 
 import Hr from "@/components/Hr";
 import ProjectCard from "./(project-card)";

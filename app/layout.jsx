@@ -5,46 +5,43 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import "./nprogress.css";
-import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
-	title: "Alvalens | Portofolio",
+	title: "SSDEV | Soluciones Digitales",
 	description:
-		"My name is Alvalens, I'm a web developer and I'm passionate about it. I'm currently studying at Universitas Negeri Malang.",
-	author: "Alvalen Shafelbilyunazra",
-	siteUrl: "https://www.alvalens.my.id",
-	applicationName: "Alvalens",
+		"SSDEV es un equipo ágil de tres expertos en desarrollo web. Creamos aplicaciones, páginas dinámicas, landing pages y automatizaciones que optimizan tu negocio.",
+	author: "SSDEV Team",
+	siteUrl: "https://www.ssdev.com",
+	applicationName: "SSDEV",
 	keywords: [
-		"alvalens",
-		"alvalen",
-		"alvalen shafel",
-		"shafel",
-		"alvalen shafelbilyunazra",
-		"alvalen shafel bilyunazra",
-		"bloodfallen",
-		"alvalen porto",
-		"alvalen um",
+		"SSDEV",
+		"desarrollo web",
+		"aplicaciones web",
+		"landing pages",
+		"automatización",
+		"software a medida",
+		"optimización digital",
+		"páginas dinámicas",
 	],
 	openGraph: {
 		type: "website",
-		url: "https://www.alvalens.my.id",
-		title: "Alvalens | Portofolio",
-		site_name: "Alvalens | Portofolio",
-		description: "My name is Alvalens, This is my portofolio website.",
+		url: "https://www.ssdev.com",
+		title: "SSDEV | Soluciones Digitales",
+		site_name: "SSDEV | Soluciones Digitales",
+		description: "SSDEV: aplicaciones web, landing pages y automatizaciones para potenciar tu negocio.",
 		width: 1200,
 		height: 630,
 		images: [
 			{
-				url: "/og-image-rev.png",
-				alt: "Alvalens Portofolio",
+				url: "/og-image-ssdev.png",
+				alt: "SSDEV Soluciones Digitales",
 			},
 		],
-		site_name: "Alvalens | Portofolio",
+		site_name: "SSDEV | Soluciones Digitales",
 	},
 };
 
 
-import Chat from "@/components/Chat";
 
 const TopProgressBar = dynamic(() => import("@/components/TopProgressbar"), {
 	ssr: false,
@@ -54,13 +51,11 @@ const TopProgressBar = dynamic(() => import("@/components/TopProgressbar"), {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html lang="es">
 			<body>
 				<TopProgressBar />
 				<Navbar />
 				{children}
-				<Chat />
-				<Analytics />
 			</body>
 		</html>
 	);
