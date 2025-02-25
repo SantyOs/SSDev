@@ -7,7 +7,7 @@ import Link from "next/link";
 
 // components
 import Button from "@/components/Button";
-import SSDEV from "@/public/image/me.jpg";
+import Me from "@/public/image/me.jpg";
 import Image1 from "@/public/image/me2.jpg";
 import Image2 from "@/public/image/me2.jpg";
 import Image3 from "@/public/image/me2.jpg";
@@ -46,7 +46,7 @@ const MyPage = () => {
                   <div className="block md:hidden col-span-1 mx-auto my-10">
                     <div className="bg-slate-500 rounded-full h-60 w-60 grayscale hover:grayscale-0 transition-all ease duration-300">
                       <Image
-                        src={SSDEV}
+                        src={Me}
                         width={500}
                         height={500}
                         className="rounded-full w-full h-full object-cover "
@@ -162,7 +162,6 @@ const MyPage = () => {
                       />
                     </motion.div>
                   ))}
-                  <div>Hola</div>
                 </div>
 
                 {/* Contenedor de texto con fondo */}
