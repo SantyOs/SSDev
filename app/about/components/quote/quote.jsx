@@ -5,9 +5,9 @@ import { useIntersectionObserver } from "./useIntersectionObserver";
 
 function Wrapper({ children }) {
 	return (
-		<div className="min-h-[80vh] mx-auto container  p-10 grid grid-cols-1 mt-10 ">
+		<div className="min-h-[80vh] mx-auto container p-10 grid grid-cols-1 mt-10">
 			<motion.div
-				className="flex justify-center items-center flex-col mb-5 "
+				className="flex justify-center items-center flex-col mb-5"
 				initial={{
 					opacity: 0,
 					scale: 0.9,
@@ -28,10 +28,9 @@ function Wrapper({ children }) {
 }
 
 export default function Quote() {
-	const text1 = '"There are no limits to what you can accomplish'.split(" ");
-	const text2 = 'except the limits you place on your own thinking."'.split(
-		" "
-	);
+	// Se ha cambiado la frase por una versión en español
+	const text1 = "El futuro pertenece a quienes creen".split(" ");
+	const text2 = "en la belleza de sus sueños.".split(" ");
 	const [ref, isIntersecting] = useIntersectionObserver();
 
 	return (
@@ -61,7 +60,7 @@ export default function Quote() {
 						</motion.span>
 					))}
 				</h3>
-				<h3 className="text-xl">
+				<h3 className="text-[2rem]">
 					{text2.map((word, index) => (
 						<motion.span
 							key={index + text1.length}

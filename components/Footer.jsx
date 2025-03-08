@@ -15,7 +15,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Interado en contrarnos?
+            ¿Qué esperas para desarrollar el sistema de tus sueños?
           </motion.h2>
           <motion.h1
             className="text-4xl md:text-6xl font-bold mt-3 text-gray-900 hover:underline flex items-center justify-center"
@@ -24,7 +24,7 @@ export default function Footer() {
             transition={{ delay: 0.5 }}
           >
             Contáctanos!
-            <FontAwesomeIcon icon={faArrowAltCircleRight} className="text-4xl ml-3 text-blue-600" />
+            <FontAwesomeIcon icon={faArrowAltCircleRight} className="text-4xl ml-3 text-gray-600" />
           </motion.h1>
         </Link>
       </div>

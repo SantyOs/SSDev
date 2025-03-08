@@ -111,10 +111,10 @@ export default function About() {
           }}
         >
           <h2 className="text-2xl font-bold tracking-wider mb-3">
-            Alvalen Shafelbilyunazra
+            SSDEV
           </h2>
           <p className="text-gray-600 text-justify title text-lg">
-            Hey there, I&rsquo;m Alvalen Shafelbilyunazra, a
+            Hey there, I&rsquo;m SS
             <span className="text-black font-medium"> tech enthusiast</span> and
             <span className="text-black font-medium">
               {" "}

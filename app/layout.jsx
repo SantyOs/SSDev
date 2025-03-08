@@ -7,47 +7,42 @@ config.autoAddCss = false;
 import "./nprogress.css";
 
 export const metadata = {
-	title: "SSDEV | Soluciones Digitales",
+	title: "SSDEV | Soluciones Digitales que Conectan",
 	description:
-		"SSDEV es un equipo ágil de tres expertos en desarrollo web. Creamos aplicaciones, páginas dinámicas, landing pages y automatizaciones que optimizan tu negocio.",
-	author: "SSDEV Team",
+		"Con SSDEV, tu negocio se impulsa con soluciones web hechas a tu medida. Creamos sitios personalizados, landing pages que cautivan y automatizaciones inteligentes para aumentar tu presencia en el mundo digital.",
+	author: "Equipo SSDEV",
 	siteUrl: "https://www.ssdev.com",
 	applicationName: "SSDEV",
 	keywords: [
 		"SSDEV",
-		"desarrollo web",
-		"aplicaciones web",
-		"landing pages",
-		"automatización",
-		"software a medida",
-		"optimización digital",
-		"páginas dinámicas",
+		"desarrollo web personalizado",
+		"soluciones digitales",
+		"experiencias digitales únicas",
+		"landing pages cautivadoras",
+		"automatización inteligente",
+		"transformación digital",
 	],
 	openGraph: {
 		type: "website",
 		url: "https://www.ssdev.com",
-		title: "SSDEV | Soluciones Digitales",
-		site_name: "SSDEV | Soluciones Digitales",
-		description: "SSDEV: aplicaciones web, landing pages y automatizaciones para potenciar tu negocio.",
+		title: "SSDEV | Soluciones Digitales que Conectan",
+		site_name: "SSDEV | Innovación Digital con Pasión",
+		description:
+			"Descubre cómo en SSDEV creamos experiencias digitales que impulsan tu negocio, combinando diseño, tecnología y estrategias de automatización para ofrecer resultados reales.",
 		width: 1200,
 		height: 630,
 		images: [
 			{
 				url: "/og-image-ssdev.png",
-				alt: "SSDEV Soluciones Digitales",
+				alt: "Innovación digital con SSDEV",
 			},
 		],
-		site_name: "SSDEV | Soluciones Digitales",
 	},
 };
-
-
 
 const TopProgressBar = dynamic(() => import("@/components/TopProgressbar"), {
 	ssr: false,
 });
-
-
 
 export default function RootLayout({ children }) {
 	return (
@@ -56,6 +51,7 @@ export default function RootLayout({ children }) {
 				<TopProgressBar />
 				<Navbar />
 				{children}
+				
 			</body>
 		</html>
 	);

@@ -14,6 +14,7 @@ import Image3 from "@/public/image/me2.jpg";
 import Setup from "@/public/image/setup.jpg";
 import ProjectAll from "@/public/image/projects.png";
 import Hr from "@/components/Hr";
+import "@/app/(root)/page.css";
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -30,6 +31,7 @@ const MyPage = () => {
 
   return (
     <div>
+      <div className="tundra-boreal"></div>
       <ReactFullpage
         render={({ state, fullpageApi }) => (
           <ReactFullpage.Wrapper>
@@ -123,16 +125,7 @@ const MyPage = () => {
                     type: "spring",
                   }}
                 >
-                  <div className="rounded-full h-auto w-auto  lg:px-12 grayscale hover:grayscale-0 transition-all ease duration-300">
-                    <Image
-                      src={Me}
-                      width={400}
-                      height={550}
-                      placeholder="blur"
-                      alt="SSDev"
-                      className="rounded-full w-full h-full object-cover"
-                    />
-                  </div>
+                 
                 </motion.div>
               </div>
             </div>
@@ -187,6 +180,18 @@ const MyPage = () => {
                     automatizaciones para optimizar procesos y potenciar
                     negocios.
                   </motion.p>
+<br />
+                  <motion.div
+
+                    initial={{ y: 40, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, type: "spring" }}
+                  >
+                      <Link href="/about"><Button variation="primary">
+                    Ver más
+                    </Button></Link>
+                  </motion.div>
+
                 </div>
               </div>
             </div>
@@ -331,7 +336,7 @@ const MyPage = () => {
                   {/* icons */}
                   <div className="flex justify-center items-center space-x-4">
                     <motion.a
-                      href="mailto:Alvalen.shafel04@gmail.com?subject=Hello&body=Hello Alvalens,"
+                      href="mailto:comercial@ssdev.com.co"
                       className="flex justify-center items-center bg-gray-700 w-14 h-14 rounded-full text-gray-100 hover:bg-gray-400 transition-all ease-in-out duration-300"
                       initial={{ y: 40, opacity: 0 }}
                       whileInView={{ y: 0, opacity: 1 }}
@@ -343,7 +348,7 @@ const MyPage = () => {
                       <FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
                     </motion.a>
 
-                    <motion.a
+                    {/* <motion.a
                       href="https://github.com/SantyOs/SSDev"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -356,7 +361,7 @@ const MyPage = () => {
                       }}
                     >
                       <FontAwesomeIcon icon={faGithub} className="text-3xl" />
-                    </motion.a>
+                    </motion.a> */}
 
                     {/* Instagram */}
                     {/* <motion.a

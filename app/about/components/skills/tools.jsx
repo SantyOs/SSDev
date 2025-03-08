@@ -18,7 +18,7 @@ export default function Tools() {
 				type: "spring",
 			}}>
 			<h2 className="text-2xl md:text-xl font-normal mb-3 md:tracking-[.3rem] lg:tracking-[.5rem] uppercase">
-				Tools
+				Herramientas
 			</h2>
 			<p className="text-gray-500 text-center tracking-wider md:px-">
 				<span className="text-black font-bold">Visual Studio Code</span>{" "}
