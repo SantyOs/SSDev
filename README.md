@@ -5,7 +5,6 @@
 * **Smooth Page Transition:** Smooth page transition with prefetching feature of next js.
 * **Dynamic Data:** Read the project data from JSON file instead of directly implemented the data.
 * **Intelliticks chat widget:** Chat with owner of the web realtime.
-* **Spotify realtime widget:** Show what song youre playing in this web.
 
 ## Installation
 
